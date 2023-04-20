@@ -1,5 +1,4 @@
-import { component$ } from "@builder.io/qwik";
-import { QwikLogo } from "~/components/icons/qwik-logo";
+import { component$ } from '@builder.io/qwik';
 
 interface LinkItem {
   href: string;
@@ -11,14 +10,10 @@ export default component$(() => {
   const links: LinkItem[] = [];
 
   return (
-    <header class="container mx-auto">
+    <header class="container mx-auto flex justify-between sticky top-0 bg-white">
       <div class="py-6">
-        <a
-          href="/"
-          title="ekstremac"
-          class="text-2xl font-bold text-cyan-700 flex gap-2"
-        >
-          <QwikLogo /> Qwik
+        <a href="/" title="TeamScape" class="text-2xl font-bold text-teal-700 flex gap-2">
+          TeamScape
         </a>
       </div>
 

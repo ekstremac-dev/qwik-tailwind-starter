@@ -1,22 +1,23 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Hero from "~/components/landing/hero/hero";
 
 export default component$(() => {
   return (
-    <div class="container mx-auto">
-      <h1 class="text-5xl font-bold">
-        Welcome to <span class="text-cyan-700">Qwik Starter</span>!
-      </h1>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik Starter!",
+  title:
+    "TeamScape - The Ultimate Team Building Solution | Boost Team Productivity",
   meta: [
     {
       name: "description",
-      content: "Qwik starter app with Tailwind CSS.",
+      content:
+        "TeamScape is a comprehensive web application that helps businesses of all sizes to plan, organize, and manage team-building activities. Our customizable hero and easy-to-use management tools make it simple to create fun and engaging team-building experiences that will help boost productivity, enhance collaboration, and build strong, long-lasting relationships among your team members. Sign up for TeamScape today and take your team-building efforts to the next level.",
     },
   ],
 };
